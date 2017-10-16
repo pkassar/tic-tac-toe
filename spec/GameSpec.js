@@ -12,8 +12,8 @@ describe('Game', function(){
       expect(game.board).toEqual(['', '', '', '', '', '', '', '', ''])
     })
 
-    it('starts with player O', function(){
-      expect(game.turn).toEqual('O')
-    })
+    // it('starts with player O', function(){
+    //   expect(game.turn).toEqual('O')
+    // })
   })
 })
