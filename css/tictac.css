@@ -12,6 +12,7 @@
   float: left;
   width: 119px;
   height: 120px;
+  cursor: pointer;
 }
 .bottom{
   border-bottom: 1px solid black
