@@ -17,12 +17,19 @@ $(document).ready(function() {
           alert('Player' + player + ' has won')
         } else {
             player = 2;
-      }else{
+          }
+      } else{
         squareSelected.addClass('oh');
-        player = 1;
+        if (checkIfPlayerWon('oh')) {
+          alert('Player' + player + ' has won')
+        } else {
+            player = 1;
+          };
       }
     }
   });
+
+
   function checkIfPlayerWon(symbol){
     if($('.sq1').hasClass(symbol) && $('.sq2').hasClass(symbol) && $('.sq3').hasClass(symbol) ) {
       return true;
