@@ -11,8 +11,11 @@
 .square{
   float: left;
   width: 119px;
-  height: 120px;
+  height: 109px;
   cursor: pointer;
+  text-align: center;
+  font-size: 100px;
+  padding-top: 10px;
 }
 .bottom{
   border-bottom: 1px solid black
