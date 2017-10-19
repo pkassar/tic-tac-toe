@@ -8,19 +8,19 @@ $(document).ready(function() {
 
   var squareSelected = $(this);
 
-  if(squareSelected.hasClass('ex') || squareSelected.hasClass('oh')) {
+  if(squareSelected.hasClass('fa fa-times') || squareSelected.hasClass('fa fa-circle-o')) {
       alert('this square has already been selected')
     } else {
       if(player === 1){
-        squareSelected.addClass('ex');
-        if (checkIfPlayerWon('ex')) {
+        squareSelected.addClass('fa fa-times');
+        if (checkIfPlayerWon('fa fa-times')) {
           alert('Player' + player + ' has won')
         } else {
             player = 2;
           }
       } else{
-        squareSelected.addClass('oh');
-        if (checkIfPlayerWon('oh')) {
+        squareSelected.addClass('fa fa-circle-o');
+        if (checkIfPlayerWon('fa fa-circle-o')) {
           alert('Player' + player + ' has won')
         } else {
             player = 1;
